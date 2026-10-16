@@ -1,0 +1,189 @@
+{
+  "useGeodesicDistances": true,
+  "geodesicMetersPerSecond": 8,
+  "timeout": "10s",
+  "model": {
+    "globalStartTime": "2026-10-13T14:00:00Z",
+    "globalEndTime": "2026-10-14T02:00:00Z",
+    "shipments": [
+      {
+        "label": "parcel-101",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.039, "longitude": -114.079 },
+            "duration": "300s",
+            "timeWindows": [{ "startTime": "2026-10-13T15:00:00Z", "endTime": "2026-10-13T18:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "2" }
+        }
+      },
+      {
+        "label": "parcel-102",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.033, "longitude": -114.07 },
+            "duration": "240s"
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "1" }
+        }
+      },
+      {
+        "label": "parcel-103",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.036, "longitude": -114.019 },
+            "duration": "360s",
+            "timeWindows": [{ "startTime": "2026-10-13T15:00:00Z", "endTime": "2026-10-13T18:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "4" }
+        }
+      },
+      {
+        "label": "parcel-104",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.053, "longitude": -114.04 },
+            "duration": "300s",
+            "timeWindows": [{ "startTime": "2026-10-13T19:00:00Z", "endTime": "2026-10-13T23:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "3" }
+        }
+      },
+      {
+        "label": "parcel-105",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.053, "longitude": -114.087 },
+            "duration": "240s"
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "2" }
+        }
+      },
+      {
+        "label": "parcel-106",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.057, "longitude": -114.099 },
+            "duration": "420s",
+            "timeWindows": [{ "startTime": "2026-10-13T19:00:00Z", "endTime": "2026-10-13T23:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "5" }
+        }
+      },
+      {
+        "label": "parcel-107",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.02, "longitude": -114.106 },
+            "duration": "240s",
+            "timeWindows": [{ "startTime": "2026-10-13T15:00:00Z", "endTime": "2026-10-13T18:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "1" }
+        }
+      },
+      {
+        "label": "parcel-108",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.013, "longitude": -114.095 },
+            "duration": "300s"
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "3" }
+        }
+      },
+      {
+        "label": "parcel-109",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.033, "longitude": -114.043 },
+            "duration": "300s",
+            "timeWindows": [{ "startTime": "2026-10-13T19:00:00Z", "endTime": "2026-10-13T23:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "2" }
+        }
+      },
+      {
+        "label": "parcel-110",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.065, "longitude": -114.037 },
+            "duration": "420s",
+            "timeWindows": [{ "startTime": "2026-10-13T15:00:00Z", "endTime": "2026-10-13T18:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "6" }
+        }
+      },
+      {
+        "label": "parcel-111",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.074, "longitude": -114.056 },
+            "duration": "300s"
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "2" }
+        }
+      },
+      {
+        "label": "parcel-112",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 51.032, "longitude": -114.11 },
+            "duration": "240s",
+            "timeWindows": [{ "startTime": "2026-10-13T19:00:00Z", "endTime": "2026-10-13T23:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "parcels": { "amount": "1" }
+        }
+      }
+    ],
+    "vehicles": [
+      {
+        "label": "van-1",
+        "startLocation": { "latitude": 51.001, "longitude": -114.007 },
+        "endLocation": { "latitude": 51.001, "longitude": -114.007 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T14:00:00Z", "endTime": "2026-10-13T14:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-14T00:00:00Z" }],
+        "loadLimits": {
+          "parcels": { "maxLoad": "20" }
+        },
+        "costPerHour": 30,
+        "costPerKilometer": 0.6
+      },
+      {
+        "label": "van-2",
+        "startLocation": { "latitude": 51.001, "longitude": -114.007 },
+        "endLocation": { "latitude": 51.001, "longitude": -114.007 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T14:00:00Z", "endTime": "2026-10-13T14:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-14T00:00:00Z" }],
+        "loadLimits": {
+          "parcels": { "maxLoad": "20" }
+        },
+        "costPerHour": 30,
+        "costPerKilometer": 0.6
+      }
+    ]
+  }
+}

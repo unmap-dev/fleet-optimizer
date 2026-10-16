@@ -1,0 +1,141 @@
+{
+  "useGeodesicDistances": true,
+  "geodesicMetersPerSecond": 11,
+  "timeout": "10s",
+  "model": {
+    "globalStartTime": "2026-10-13T12:00:00Z",
+    "globalEndTime": "2026-10-13T23:00:00Z",
+    "shipments": [
+      {
+        "label": "job-201",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.414, "longitude": -75.697 },
+            "duration": "3600s",
+            "timeWindows": [{ "startTime": "2026-10-13T13:00:00Z", "endTime": "2026-10-13T16:00:00Z" }]
+          }
+        ]
+      },
+      {
+        "label": "job-202",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.401, "longitude": -75.688 },
+            "duration": "2700s"
+          }
+        ]
+      },
+      {
+        "label": "job-203",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.392, "longitude": -75.755 },
+            "duration": "5400s"
+          }
+        ],
+        "allowedVehicleIndices": [0, 2]
+      },
+      {
+        "label": "job-204",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.469, "longitude": -75.516 },
+            "duration": "1800s",
+            "timeWindows": [{ "startTime": "2026-10-13T17:00:00Z", "endTime": "2026-10-13T20:00:00Z" }]
+          }
+        ],
+        "allowedVehicleIndices": [1]
+      },
+      {
+        "label": "job-205",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.309, "longitude": -75.907 },
+            "duration": "3600s"
+          }
+        ],
+        "allowedVehicleIndices": [0]
+      },
+      {
+        "label": "job-206",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.274, "longitude": -75.736 },
+            "duration": "2700s",
+            "timeWindows": [{ "startTime": "2026-10-13T12:30:00Z", "endTime": "2026-10-13T15:00:00Z" }]
+          }
+        ]
+      },
+      {
+        "label": "job-207",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.437, "longitude": -75.662 },
+            "duration": "1800s"
+          }
+        ]
+      },
+      {
+        "label": "job-208",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.387, "longitude": -75.662 },
+            "duration": "4500s"
+          }
+        ],
+        "allowedVehicleIndices": [0, 2]
+      },
+      {
+        "label": "job-209",
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.35, "longitude": -75.74 },
+            "duration": "2700s",
+            "timeWindows": [{ "startTime": "2026-10-13T18:00:00Z", "endTime": "2026-10-13T21:00:00Z" }]
+          }
+        ]
+      }
+    ],
+    "vehicles": [
+      {
+        "label": "tech-kanata",
+        "startLocation": { "latitude": 45.32, "longitude": -75.89 },
+        "endLocation": { "latitude": 45.32, "longitude": -75.89 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T12:00:00Z", "endTime": "2026-10-13T12:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-13T21:30:00Z" }],
+        "breakRule": {
+          "breakRequests": [{ "earliestStartTime": "2026-10-13T16:00:00Z", "latestStartTime": "2026-10-13T17:00:00Z", "minDuration": "1800s" }]
+        },
+        "routeDurationLimit": { "maxDuration": "23400s" },
+        "costPerHour": 45,
+        "costPerKilometer": 0.4
+      },
+      {
+        "label": "tech-orleans",
+        "startLocation": { "latitude": 45.475, "longitude": -75.53 },
+        "endLocation": { "latitude": 45.475, "longitude": -75.53 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T12:00:00Z", "endTime": "2026-10-13T12:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-13T21:30:00Z" }],
+        "breakRule": {
+          "breakRequests": [{ "earliestStartTime": "2026-10-13T16:00:00Z", "latestStartTime": "2026-10-13T17:00:00Z", "minDuration": "1800s" }]
+        },
+        "routeDurationLimit": { "maxDuration": "23400s" },
+        "costPerHour": 45,
+        "costPerKilometer": 0.4
+      },
+      {
+        "label": "tech-alta-vista",
+        "startLocation": { "latitude": 45.38, "longitude": -75.67 },
+        "endLocation": { "latitude": 45.38, "longitude": -75.67 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T12:00:00Z", "endTime": "2026-10-13T12:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-13T21:30:00Z" }],
+        "breakRule": {
+          "breakRequests": [{ "earliestStartTime": "2026-10-13T16:00:00Z", "latestStartTime": "2026-10-13T17:00:00Z", "minDuration": "1800s" }]
+        },
+        "routeDurationLimit": { "maxDuration": "23400s" },
+        "costPerHour": 45,
+        "costPerKilometer": 0.4
+      }
+    ]
+  }
+}

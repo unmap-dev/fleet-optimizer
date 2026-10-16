@@ -1,0 +1,149 @@
+{
+  "useGeodesicDistances": true,
+  "geodesicMetersPerSecond": 7,
+  "timeout": "10s",
+  "model": {
+    "globalStartTime": "2026-10-13T13:00:00Z",
+    "globalEndTime": "2026-10-13T23:00:00Z",
+    "shipments": [
+      {
+        "label": "order-301",
+        "pickups": [
+          {
+            "arrivalLocation": { "latitude": 45.522, "longitude": -73.58 },
+            "duration": "180s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.507, "longitude": -73.554 },
+            "duration": "240s",
+            "timeWindows": [{ "endTime": "2026-10-13T14:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "boxes": { "amount": "2" }
+        }
+      },
+      {
+        "label": "order-302",
+        "pickups": [
+          {
+            "arrivalLocation": { "latitude": 45.525, "longitude": -73.6 },
+            "duration": "180s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.492, "longitude": -73.56 },
+            "duration": "240s"
+          }
+        ],
+        "loadDemands": {
+          "boxes": { "amount": "1" }
+        }
+      },
+      {
+        "label": "order-303",
+        "pickups": [
+          {
+            "arrivalLocation": { "latitude": 45.543, "longitude": -73.585 },
+            "duration": "180s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.478, "longitude": -73.585 },
+            "duration": "240s",
+            "timeWindows": [{ "endTime": "2026-10-13T14:30:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "boxes": { "amount": "3" }
+        }
+      },
+      {
+        "label": "order-304",
+        "pickups": [
+          {
+            "arrivalLocation": { "latitude": 45.545, "longitude": -73.62 },
+            "duration": "180s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.544, "longitude": -73.54 },
+            "duration": "240s"
+          }
+        ],
+        "loadDemands": {
+          "boxes": { "amount": "1" }
+        }
+      },
+      {
+        "label": "order-305",
+        "pickups": [
+          {
+            "arrivalLocation": { "latitude": 45.52, "longitude": -73.61 },
+            "duration": "180s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.46, "longitude": -73.57 },
+            "duration": "240s",
+            "timeWindows": [{ "startTime": "2026-10-13T14:00:00Z", "endTime": "2026-10-13T15:00:00Z" }]
+          }
+        ],
+        "loadDemands": {
+          "boxes": { "amount": "2" }
+        }
+      },
+      {
+        "label": "order-306",
+        "pickups": [
+          {
+            "arrivalLocation": { "latitude": 45.473, "longitude": -73.617 },
+            "duration": "180s"
+          }
+        ],
+        "deliveries": [
+          {
+            "arrivalLocation": { "latitude": 45.5017, "longitude": -73.5673 },
+            "duration": "240s"
+          }
+        ],
+        "loadDemands": {
+          "boxes": { "amount": "2" }
+        },
+        "penaltyCost": 40
+      }
+    ],
+    "vehicles": [
+      {
+        "label": "courier-1",
+        "startLocation": { "latitude": 45.5, "longitude": -73.57 },
+        "endLocation": { "latitude": 45.5, "longitude": -73.57 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T13:00:00Z", "endTime": "2026-10-13T13:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-13T15:00:00Z" }],
+        "loadLimits": {
+          "boxes": { "maxLoad": "4" }
+        },
+        "costPerHour": 25,
+        "costPerKilometer": 0.5
+      },
+      {
+        "label": "courier-2",
+        "startLocation": { "latitude": 45.5, "longitude": -73.57 },
+        "endLocation": { "latitude": 45.5, "longitude": -73.57 },
+        "startTimeWindows": [{ "startTime": "2026-10-13T13:00:00Z", "endTime": "2026-10-13T13:30:00Z" }],
+        "endTimeWindows": [{ "endTime": "2026-10-13T15:00:00Z" }],
+        "loadLimits": {
+          "boxes": { "maxLoad": "4" }
+        },
+        "costPerHour": 25,
+        "costPerKilometer": 0.5
+      }
+    ]
+  }
+}
