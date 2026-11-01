@@ -1,6 +1,6 @@
 {
   "name": "unmap-fleet-optimizer",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": true,
   "description": "Fleet Optimizer: check, solve and review a Google Route Optimization request on Unmap, built with Unmap. An Unmap app and a starter you can clone.",
   "scripts": {
@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
-    "@unmap/maps": "0.21.0",
-    "@unmap/routing": "0.21.0",
-    "@unmap/sdk": "0.21.0",
+    "@unmap/maps": "0.22.1",
+    "@unmap/routing": "0.22.1",
+    "@unmap/sdk": "0.22.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "fflate": "0.8.3",
