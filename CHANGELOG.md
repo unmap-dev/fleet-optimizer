@@ -1,5 +1,13 @@
 # @unmap/app-fleet-optimizer
 
+## 0.0.19
+
+### Patch Changes
+
+- @unmap/maps@0.34.0
+- @unmap/sdk@0.34.0
+- @unmap/routing@0.34.0
+
 ## 0.0.18
 
 ### Patch Changes
