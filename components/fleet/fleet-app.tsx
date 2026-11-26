@@ -59,7 +59,7 @@ function Workspace({ lang }: { lang: Lang }) {
   const counts = useMemo(() => (checkRequest ? overCaps(checkRequest, caps) : null), [checkRequest, caps]);
   const solveRequest = useMemo(() => {
     if (!checkRequest || !settings) return null;
-    // Road travel ends at the border: a stop outside Canada forces straight lines whatever was picked.
+    // Optimize's road travel is Canadian only: a stop outside Canada forces straight lines whatever was picked.
     return applySettings(checkRequest, outside > 0 ? { ...settings, travel: "straight" } : settings);
   }, [checkRequest, settings, outside]);
 

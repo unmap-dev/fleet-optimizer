@@ -26,7 +26,8 @@ check it and to solve it. Nothing is stored.
    report says what to change in the file. Once fields are removed, every result view and the
    downloaded `scenario.json` carry the removed paths. Your original file is never changed.
 4. **Set the solve.** A timeout, the search mode, and road or straight-line travel. Straight line
-   is forced, with a notice, when a stop is outside Canada, where road travel ends.
+   is forced, with a notice, when a stop is outside Canada: Unmap Optimize's road travel is
+   Canadian only.
 5. **Solve and review.** A map with one colour per vehicle, a timeline of each vehicle's day, the
    totals and cost components, and the shipments that were skipped with their reasons.
 6. **Compare and download.** When the upload had Google's `solution.json`, the two plans sit side
@@ -88,8 +89,10 @@ only solve is off.
   solve settings.
 - **Re-evaluate Google's plan on Unmap's travel times.** That needs injected solutions, which Unmap
   does not support yet.
-- **Road travel outside Canada**, or place-ID geocoding. Place IDs are reported in the check; a
-  stop outside Canada switches travel to straight line in the solve settings, with a notice.
+- **Road travel outside Canada**, or place-ID geocoding. Unmap Optimize's road matrices come from
+  the Canadian road graph only; the US car routing in ten metros answers `/route`, `/matrix` and
+  `/optimized-route`, not `optimizeTours`. Place IDs are reported in the check; a stop outside
+  Canada switches travel to straight line in the solve settings, with a notice.
 - **Remove fields that change the problem itself.** Only `FIELD_NOT_SUPPORTED_YET` can be removed.
 - **Save scenarios, accounts, CSV import, or PDF export.** Everything stays in the browser.
 

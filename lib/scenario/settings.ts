@@ -120,7 +120,7 @@ export function usesMatrices(request: Json): boolean {
 }
 
 /**
- * Road travel, unless a stop is outside Canada (the road network ends there) or the request already
+ * Road travel, unless a stop is outside Canada (Optimize's road network is Canadian only) or the request already
  * asked for straight lines. A request with travel matrices keeps road: the matrices stand in for
  * travel and the API refuses geodesic distances beside them.
  */

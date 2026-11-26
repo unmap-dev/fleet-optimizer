@@ -16,7 +16,7 @@ What Fleet Optimizer does, which Unmap API does it, and what it deliberately doe
 | Blocking errors | `VALUE_NOT_SUPPORTED_YET`, `PLACE_ID_NOT_SUPPORTED` and malformed values stay blocking, with what to change in the file | none |
 | Labelling | once fields are removed, the results, the comparison and the exported `scenario.json` carry the removed paths | none |
 | Solve settings | timeout, search mode (`RETURN_FAST`, `CONSUME_ALL_AVAILABLE_TIME`), road or straight-line travel at a chosen speed; applied on top of the file | none |
-| Travel outside Canada | straight line is forced, with a notice, when a stop lies outside Canada (an approximate bounding-box check) | none |
+| Travel outside Canada | straight line is forced, with a notice, when a stop lies outside Canada (an approximate bounding-box check), because Unmap Optimize's road travel is Canadian only | none |
 | Client caps | optional `NEXT_PUBLIC_MAX_SHIPMENTS` / `NEXT_PUBLIC_MAX_VEHICLES`; over a cap the check still runs and solve is off with the counts shown | none |
 | Solve | the scenario is sent to `POST /optimize` | Optimize API |
 | Map | one colour per vehicle, numbered stops, depots; road routes from `routePolyline`, straight-line ones as legs between stops; a tooltip per stop | Maps API, registry `map`, `route-line`, `marker-popup` |
